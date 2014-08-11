@@ -49,6 +49,14 @@ Yii-Ueditor插件是使用Ueditor 1.4.3开发的。
 <span class="p">);</span>
 </pre></div>
 
+<div class="highlight highlight-php"><pre><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">widget</span><span class="p">(</span><span class="s1">'ext.ueditor.UeditorWidget'</span><span class="p">,</span>
+        <span class="k">array</span><span class="p">(</span>
+                <span class="s1">'model'</span><span class="o">=&gt;</span><span class="s1">$model</span><span class="p">,</span><span class="c1">//model</span>
+                <span class="s1">'attribute'</span><span class="o">=&gt;</span><span class="s1">''</span><span class="p">,</span><span class="c1">//attribute</span>
+        <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+
 <p></p>
 </li>
 <li>
