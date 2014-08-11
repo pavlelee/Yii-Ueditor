@@ -51,6 +51,8 @@ class XUeditorController extends UeditorController {
 			$this->config['imageFieldName'] = 'file';
 			$this->config['suffix_thumbnail'] = $this->suffix_thumbnail;
 			$this->config['suffix_big'] = $this->suffix_big;
+		}else{
+			!isset($this->config['imageUrl']) && $this->config['imageUrl'] = $this->createUrl('ueditor/index',array('action'=>'uploadimage'));
 		}
 		
 		parent::init();
