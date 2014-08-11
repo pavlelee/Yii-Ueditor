@@ -3,7 +3,7 @@ Yii-Ueditor
 
 Yii-Ueditor插件是使用Ueditor 1.4.3开发的。
 
-该插件在https://github.com/xbzbing/yii1-ueditor-ext基础上进行开发。在最小破环源码的基础下，添加了七牛上传、图片管理。
+该插件在https://github.com/xbzbing/yii1-ueditor-ext 基础上进行开发。在最小破环源码的基础下，添加了七牛上传、图片管理。
 
 配置说明
 
