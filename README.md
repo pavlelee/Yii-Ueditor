@@ -27,7 +27,7 @@ Yii-Ueditor插件是使用Ueditor 1.4.3开发的。
         <span class="s1">'class'</span><span class="o">=&gt;</span><span class="s1">'ext.ueditor.UeditorController'</span><span class="p">,</span>
         <span class="s1">'config'</span><span class="o">=&gt;</span><span class="k">array</span><span class="p">(),</span><span class="c1">//参考config.json的配置，此处的配置具备最高优先级</span>
         <span class="s1">'useQiniu'</span><span class="o">=&gt;</span><span class="k">true</span><span class="p">(),</span><span class="c1">//是否使用七牛存储</span>
-        <span class="s1">'thumbnail'</span><span class="o">=&gt;</span><span class="k">true</span><span class="p">,</span><span class="c1">//是否开启缩略图</span>
+        <span class="s1">'thumbnail'</span><span class="o">=&gt;</span><span class="k">true</span>,</span><span class="c1">//是否开启缩略图</span>
         <span class="s1">'watermark'</span><span class="o">=&gt;</span><span class="s1">''</span><span class="p">,</span><span class="c1">//水印图片的地址，使用相对路径</span>
         <span class="s1">'locate'</span><span class="o">=&gt;</span><span class="mi">9</span><span class="p">,</span><span class="c1">//水印位置，1-9，默认为9在右下角</span>
     <span class="p">),</span>
