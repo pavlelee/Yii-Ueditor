@@ -172,6 +172,16 @@ class UeditorWidget extends CInputWidget {
         }
 
         $js = <<<UEDITOR
+        
+        UE.Editor.prototype._bkGetActionUrl = UE.Editor.prototype.getActionUrl;
+		UE.Editor.prototype.getActionUrl = function(action) {
+		    if ( this.getOpt('useQiniu') == true && action == 'uploadimage') {
+		        return this.getOpt('imageUrl');
+		    } else {
+		        return this._bkGetActionUrl.call(this, action);
+		    }
+		}
+        
         var {$this->id} = UE.getEditor('{$this->id}', {$options});
         {$this->id}.ready(function(){
         	if(this.getOpt('useQiniu')){

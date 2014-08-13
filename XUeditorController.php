@@ -51,6 +51,8 @@ class XUeditorController extends UeditorController {
 			$this->config['imageFieldName'] = 'file';
 			$this->config['suffix_thumbnail'] = $this->suffix_thumbnail;
 			$this->config['suffix_big'] = $this->suffix_big;
+		}else{
+			!isset($this->config['imageUrl']) && $this->config['imageUrl'] = $this->createUrl('ueditor/index',array('action'=>'uploadimage'));
 		}
 		
 		parent::init();
@@ -143,7 +145,8 @@ class XUeditorController extends UeditorController {
      * 获取编辑器七牛的token
      */
     private function _getQiniuToken(){
-    	return Yii::app()->qiniu->getToken(array(
+    	$qiniu = $this->getQiniu();
+    	return $qiniu->getToken(array(
     		'ReturnBody' => '{ "state":"SUCCESS", "url":"http://$(bucket).qiniudn.com/$(key)'.$this->suffix_thumbnail.'", "title":"$(fname)", "original":"$(fname)", "name": $(key), "size": $(fsize), "type": $(mimeType), "hash": $(etag), "key":$(key) }',
     		'SaveKey' => $this->evaluateExpression($this->prefix).'_$(year)$(mon)$(day)$(etag)',
     	));
