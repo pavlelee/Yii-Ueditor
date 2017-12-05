@@ -11,13 +11,13 @@ Yii-Ueditor插件是使用Ueditor 1.4.3开发的。
 </li>
 <li>
 2、在config.php中配置controllerMap，来指定ueditor的访问路径
-
-<div class="highlight highlight-php"><pre><span class="s1">'controllerMap'</span><span class="o">=&gt;</span><span class="k">array</span><span class="p">(</span>
-    <span class="s1">'ueditor'</span><span class="o">=&gt;</span><span class="k">array</span><span class="p">(</span>
-        <span class="s1">'class'</span><span class="o">=&gt;</span><span class="s1">'ext.ueditor.XUeditorController'</span><span class="p">,</span>
-    <span class="p">),</span>
-<span class="p">),</span>
-<iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></pre></div>
+```
+'controllerMap'=>array(
+    'ueditor'=>array(
+        'class'=>'ext.ueditor.XUeditorController',
+    ),
+),
+```
 
 <pre><code>可选配置：
 </code></pre>
